@@ -1,2 +1,3 @@
-# max-game-map-editor
-M.A.X. Map Editor
+# The M.A.X.: Mechanized Assault & Exploration Map Editor
+
+## This is work in progress
