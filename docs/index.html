@@ -7,8 +7,81 @@
 		<title>The M.A.X.: Mechanized Assault & Exploration Map Editor</title>
 	</head>
 	<body>
-		<section>
+		<header>
 			<img src="./images/title.png" title="M.A.X.: Mechanized Assault & Exploration Map Editor">
+		</header>
+
+		<section class="log">
+			<div class="log-bg log-header">Current progress report #1
+				<div class="log-date">log date: distant future from 2024-09-02</div>
+			</div>
+			<div class="log-bg log-message">
+				<p>
+					Here is an overview of the current work progress on the "utility"
+					(sometimes referred to as the M.A.X. Map Editor).
+					Information about related work can be found below.
+				</p>
+			</div>
+			<div class="log-bg log-message">
+				<p>
+					Progress on the "utility":
+				</p>
+				<ul>
+					<li><span class="done">done</span> Loading predefined WRL file;</li>
+					<li><span class="done">done</span> Saving edited maps;</li>
+					<li><span class="done">done</span> Rendering world map;</li>
+					<li><span class="done">done</span> Panning and zooming (1/4x, 1/2x, 1x, 2x) world map;</li>
+					<li><span class="done">done</span> Minimap with panning and zooming;</li>
+					<li><span class="done">done</span> Toggleable (on/off) side panel and windowed minimap;</li>
+					<li><span class="done">done</span> Side panel with tile selector with tile grouping);</li>
+					<li><span class="done">done</span> Selectable tile size in selector (16px, 24px, 32px, 48px, 64px);</li>
+					<li><span class="done">done</span> History of used tiles (current tile and two previous ones for faster switching);</li>
+					<li><span class="done">done</span> Map resize tool with selectable origin (top/mid/bottom - left/center/right);</li>
+					<li><span class="done">done</span> Simple cell drawing (atm: with minor bug);</li>
+					<li><span class="done">done</span> Toggleable (on/off) layers: grid, highlight tile type (water, shore, ground, obstacle).</li>
+				</ul>
+			</div>
+			<div class="log-bg log-panel">
+				<div class="label" title="The leaked sneak peek of internal build:">The leaked sneak peek of internal build:</div>
+				<div class="grid grid-3c">
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0002_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0003_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0004_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0005_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0010_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0011_small.png" title="The leaked sneak peek of internal build" data-preview="true" /></div>
+				</div>
+			</div>
+
+			<div class="log-bg log-message">
+				<p>
+					In addition to the main task, work is ongoing on related features, such as tile consolidation,
+					grouping, and matching. This work will enhance the functionality of the 'utility' by providing
+					the metadata required for auto-shore feature or random map generation.
+				</p>
+			</div>
+			<div class="log-bg log-message">
+				<p>
+					Progress on related work:
+				</p>
+				<ul>
+					<li><span class="done">done</span> Consolidation of all tiles per planet;
+					<li><span class="done">done</span> Grouping tiles per type (water, shore, mountains, ...);
+					<li><span class="done">done</span> Matching tiles by matching sides;
+					<li><span class="partial">partial</span> Tile templates for fast and accurate drawing mountains, trees, pyramids, ...
+				</ul>
+			</div>
+			<div class="log-bg log-panel">
+				<div class="label" title="The leaked images of internal tools:">The leaked images of internal tools:</div>
+				<div class="grid grid-3c">
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0013_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0012_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0006_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0007_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0009_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+					<div><img class="log-screenshot" src="images/screens/preview_screen_0008_small.png" title="The leaked images of internal tools" data-preview="true" /></div>
+				</div>
+			</div>
 		</section>
 
 		<section class="log">
@@ -36,13 +109,11 @@
 					which would then be used to develop new habitable planets.
 				</p>
 			</div>
-			<div class="log-bg log-message">
-				<P>
-					The very first public preview of the "utility":
-					<div class="log-bg log-panel">
-						<img class="log-screenshot" src="images/screens/preview_screen_0001.png" data-preview="true" />
-					</div>
-				</p>
+		</div>
+		<div class="log-bg log-panel">
+			<div class="label" title="The very first public preview of the "utility":">The very first public preview of the "utility":</div>
+			<div class="grid">
+				<div><img class="log-screenshot" src="images/screens/preview_screen_0001_small.png" data-preview="true" title="The very first public preview of the &quot;utility&quot;" /></div>
 			</div>
 		</section>
 	</body>
