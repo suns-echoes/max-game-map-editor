@@ -1,0 +1,16 @@
+{
+  "name": "max-game-map-editor",
+  "version": "0.0.1",
+  "description": "The M.A.X.: Mechanized Assault & Exploration Map Editor",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aneta Suns",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "22.5.4",
+    "typescript": "5.6.2"
+  }
+}

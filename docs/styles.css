@@ -48,6 +48,16 @@ p {
 	}
 }
 
+a {
+	color: #fb0;
+	text-shadow: -1px -1px 1px #ea0, 2px 2px 1px #000;
+
+	&:hover {
+		color: #fd0;
+		text-shadow: -1px -1px 1px #e90, 2px 2px 1px #000;
+	}
+}
+
 ul {
 	list-style-type: none;
 	margin: 0 0 0 10px;
