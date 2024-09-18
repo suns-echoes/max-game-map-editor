@@ -9,7 +9,7 @@
 body {
 	width: 100%;
 	height: 100%;
-	margin: 20px auto;
+	margin: 0;
 
 	color: #edb;
 	text-shadow: 1px 0 1px #edb;
@@ -28,7 +28,47 @@ body {
 header {
 	width: 640px;
 	overflow: hidden;
+	margin: 0 auto 10px auto;
+}
+
+nav {
+	width: 640px;
 	margin: 10px auto;
+
+	ul {
+		list-style-type: none;
+
+		display: flex;
+		flex-direction: row;
+
+		margin: 0;
+		padding: 0;
+
+		li {
+			width: 100%;
+			padding: 8px 12px;
+
+			border-image-source: url('./images/btn.png');
+			border-image-slice: 5 5 5 5 fill;
+			border-image-width: 5px 5px 5px 5px;
+			border-image-outset: 0px 0px 0px 0px;
+			border-image-repeat: stretch stretch;
+
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: #eda;
+				text-shadow: 1px 1px #dc9, 1px 1px 5px #000, 1px 1px 10px #000;
+				text-align: center;
+				text-decoration: none;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
 }
 
 section {
