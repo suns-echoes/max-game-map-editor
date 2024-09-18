@@ -26,13 +26,15 @@ body {
 }
 
 header {
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	overflow: hidden;
 	margin: 0 auto 10px auto;
 }
 
 nav {
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	margin: 10px auto;
 
 	ul {
@@ -74,7 +76,8 @@ nav {
 section {
 	display: flex;
 	flex-direction: column;
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	overflow: hidden;
 	margin: 10px auto;
 }
