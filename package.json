@@ -1,16 +1,29 @@
 {
   "name": "max-game-map-editor",
-  "version": "0.0.1",
-  "description": "The M.A.X.: Mechanized Assault & Exploration Map Editor",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.1-demo.0",
+  "description": "M.A.X. Game Map Editor",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cd app && vite",
+    "build": "cd app && tsc && vite build",
+    "preview": "cd app && vite preview",
+    "tauri": "cd app && tauri"
   },
   "author": "Aneta Suns",
+  "homepage": "https://suns-echoes.github.io/max-game-map-editor/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suns-echoes/max-game-map-editor"
+  },
   "license": "ISC",
+  "dependencies": {
+    "@tauri-apps/api": "1.6.0"
+  },
   "devDependencies": {
+    "@tauri-apps/cli": "1.6.2",
     "@types/node": "22.5.4",
+    "vite": "5.4.7",
     "typescript": "5.6.2"
   }
 }

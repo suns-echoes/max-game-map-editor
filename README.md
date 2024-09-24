@@ -6,14 +6,19 @@
 >
 > **The official M.A.X. Game Map Editor website.**
 
+> **[M.A.X. Game Map Editor GitHub Repository](https://github.com/suns-echoes/max-game-map-editor)**
+>
+> **The official M.A.X. Game Map Editor GitHub repository.**
+
 > **[M.A.X. Port](https://klei1984.github.io/max/)**
 >
-> The great project dedicated to fixing bugs in the original game that prevent
-> it from being stable and fully enjoyable.
+> The M.A.X. Port is an excellent project dedicated to fixing bugs in the
+> original game that prevent it from being stable and fully enjoyable.
 
 > **[M.A.X.: Mechanized Assault & Exploration](https://en.wikipedia.org/wiki/Mechanized_Assault_%26_Exploration)**
 >
 > Wiki about the M.A.X. Game.
+
 
 ▵
 
@@ -33,7 +38,7 @@ experience for all M.A.X. enthusiasts.
 
 with 🖤 for M.A.X. | maXimum map making
 
-### Planned Features:
+### ▰ Planned Features:
 
 Here’s a sneak peek at some of the features planned for the M.A.X. Map Editor:
 
@@ -49,14 +54,150 @@ Here’s a sneak peek at some of the features planned for the M.A.X. Map Editor:
     - adjacent tile suggestions to boost the design process;
 - random map generator with customizable parameters:
     - seed-based generator for easy sharing of awesome maps,
-    - the adjustable amount and distribution of water (open ocean, sea, lakes
-	  and rivers),
+    - the adjustable amount and distribution of water (open ocean, sea, lakes and rivers),
     - the adjustable amount of obstacles like mountains, cliffs, and trees;
 - support for custom tile sets and palettes;
 - palette editor for tweaking colors;
 - palette hot swap for fast choosing the best one;
 
 ... only time will tell what other features might be.
+
+
+▵
+
+## ▰ Preparing development environment
+
+### ▰ Setting up IDE
+
+#### ----▰ VSCode
+
+To prevent collision with Vite CSS processing mechanism files containing
+web components styles have the `.style` extension. To allow IDE
+to understand what they are, do the following:
+
+1. Open `Settings` by pressing `Ctrl + ,`;
+2. Find `files associations`;
+3. Add new entry item `*.style` with `css` value.
+
+
+▵
+
+### ▰ Setting up Linux (Debian / Ubuntu)
+
+> **References:**
+>
+> `Tauri v1` https://tauri.app/v1/guides/getting-started/prerequisites#setting-up-linux
+>
+> `Rust` https://www.rust-lang.org/tools/install
+
+#### ----▰ Prerequisites
+
+`Ubuntu 18 (or later)` or `Debian 11 (or later)`
+
+#### ----▰ Installing Tauri dependencies
+
+```sh
+sudo apt update
+sudo apt install libwebkit2gtk-4.0-dev \
+    build-essential \
+    curl \
+    wget \
+    file \
+    libssl-dev \
+    libgtk-3-dev \
+    libayatana-appindicator3-dev \
+    librsvg2-dev
+```
+
+#### ----▰ Installing Rust
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+#### ----▰ Installing Node.js LTS v20 (or later)
+
+The official website:
+
+> https://nodejs.org/en
+
+or Node Version Manager:
+
+> https://github.com/nvm-sh/nvm
+
+
+▵
+
+## ▰ Building project
+
+#### ----▰ Building full application
+
+Run this command in the project root folder using the native terminal
+(i.e.: VSCode terminal will not work)
+
+```sh
+npm run tauri build
+```
+
+The build output directory: `./app/src-tauri/target/release/bundle/`
+
+Generated assets:
+
+1. The AppImage: `./appimage/tauri-app_X.Y.Z_amd64.AppImage`
+2. The DEB: `./deb/tauri-app_X.Y.Z_amd64.deb`
+3. The RPM: `./rpm/tauri-app-X.Y.Z-1.x86_64.rpm`
+
+
+#### ----▰ Building frontend only
+
+Run this command in project root folder:
+
+```sh
+npm run build
+```
+
+The build output directory: `./app/dist/`
+
+
+▵
+
+## ▰ Developing project
+
+#### ----▰ Development build for full application
+
+Run this command in the project root folder using the native terminal
+(i.e., the VSCode terminal will not work):
+
+```sh
+npm run tauri dev
+```
+
+The above command will build the app in development mode (with access to dev
+tools and hot-module-replacements enabled).
+
+Frontend (GUI) will be available at http://localhost:1420/ ¹
+
+> **🛈 NOTE**
+>
+> ¹ This may or may not work as intended or at all due to missing API provided
+>   by the Tauri backend.
+
+
+#### ----▰ Development build for frontend only
+
+Run this command in the project root folder:
+
+```sh
+npm run dev
+```
+
+Frontend (GUI) will be available at http://localhost:1420/ ¹
+
+> **🛈 NOTE**
+>
+> ¹ This may or may not work as intended or at all due to missing API provided
+>   by the Tauri backend.
+
 
 ▵
 
