@@ -8,7 +8,7 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "M.A.X. Game Map Editor",
+    "productName": "max-game-map-editor",
     "version": "../../package.json"
   },
   "tauri": {
@@ -19,6 +19,20 @@
         "open": true
       }
     },
+    "bundle": {
+      "active": true,
+	  "deb": {
+		"desktopTemplate": "deb.desktop"
+	  },
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.max-game-map-editor.app",
+      "targets": "all"
+    },
     "windows": [
       {
         "title": "M.A.X. Game Map Editor",
@@ -28,17 +42,6 @@
     ],
     "security": {
       "csp": null
-    },
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "com.max-game-map-editor.app",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.ico"
-      ]
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "max-game-map-editor",
   "private": true,
-  "version": "0.0.1-demo.0",
+  "version": "0.0.0",
   "description": "M.A.X. Game Map Editor",
   "type": "module",
   "scripts": {
